@@ -1,0 +1,54 @@
+.services-table {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr auto; /* Adjust the fraction units based on your design preferences */
+  gap: 0px;
+  font-family: 'TTLakes-Regular';
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+.service-header {
+  display: contents;
+  color: #7e7e82;
+}
+
+.service-row {
+  display: contents;
+  color: #1b1c21;
+  border-radius: 600px;
+  /* border-bottom: 1px solid #EAEAEA; */
+}
+
+.service-row div,
+.service-header div {
+  padding: 10px;
+  /* border-bottom: 1px solid #EAEAEA; */
+}
+
+.service-row button {
+  background-color: #ff4081; /* Pink color for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.service-row button:hover {
+  background-color: #e03565; /* Darker pink on hover */
+}
+
+.service-header div {
+  font-weight: bold;
+  background: #f8f8f8;
+}
+
+.service-row:nth-child(even) {
+  background: #ffffff;
+  /* color: #7E7E82; */
+}
+
+.price-container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
