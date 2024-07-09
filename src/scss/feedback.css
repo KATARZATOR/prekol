@@ -5,20 +5,29 @@
   position: fixed;
   right: -100%;
   top: 0;
-  width: 300px;
+  /* width: 300px; */
   height: 100%;
   background: white;
-  transition: right 0.3s ease-out;
+  /* transition: right 0.3s ease-out; */
   border-left: 1px solid #ccc;
-  z-index: 1010;
+  z-index: 9010;
 }
-div.feedback-container1 {
-  background-color: #ffffff;
-  width: 440px;
-  height: 100%;
-  font-family: 'TTLakes-Medium';
-  box-sizing: border-box;
+
+@media (min-width: 320px) {
+  div.feedback-container1 {
+    background-color: #ffffff;
+    width: 440px;
+    height: 100%;
+    font-family: 'TTLakes-Medium';
+    box-sizing: border-box;
+  }
+  .feedback-header {
+    position: absolute;
+    right: 460px;
+    top: 32px;
+  }
 }
+
 .feedback-agreement {
   font-family: 'TTLakes-Medium';
 }
@@ -73,72 +82,27 @@ div.feedback-container1 {
 .feedback-form-container {
   width: 100%;
 }
-/* .feedback-item1 {
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-}
-
-.feedback-container1 {
-  position: absolute;
-  right: -320px;
-  top: 0px;
-  width: 320px;
-  height: 100%;
-  background-color: #ffffff;
-  transition: right 0.5s;
-}
-
-.feedback-container.open {
-  right: 0;
-  height: 100%;
-} */
-
-/* @media (min-width: 320px) {
-  div.feedback-header {
-    position: absolute;
-    right: 460px;
-    top: 32px;
-  }
-  .feedback__container1 {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 440px;
-    height: 100%;
-    background: white;
-    border-left: 1px solid #ccc;
-    transition: transform 0.3s ease-out;
-    transform: translateX(100%);
-    z-index: 1000;
-  }
-} */
 
 /* fdsfklflkl */
-.feedback-header {
-  position: absolute;
-  right: 460px;
-  top: 32px;
-}
-/* @media(min-width:320px){
-  .feedback__header{
-    position: absolute;
-    right:460px;
-    top:32px;
+
+@media (max-width: 320px) {
+  div.feedback__header.feedback__header1 {
+    position: static;
+
   }
   .feedback__container {
-    position: fixed;
+    position: static;
     right: 0;
     top: 0;
-    width: 440px;
+    width: 100vw;
     height: 100%;
     background: white;
     border-left: 1px solid #ccc;
-    transition: transform 0.3s ease-out;
+    /* transition: transform 0.3s ease-out; */
     transform: translateX(100%);
     z-index: 1000;
   }
-  
-  } */
+  .close-feedback-btn {
+    margin: 16px;
+  }
+}

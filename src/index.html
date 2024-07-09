@@ -18,6 +18,9 @@
 
 </head>
 <body class="center">
+
+
+
     <header class="header">
         <div class="container header__container">
         <div class="logo-container">
@@ -25,7 +28,7 @@
                 <nav class="side-menu">
                     <input id="toggle-checkbox" type="checkbox" style="display: none">
                     <label class="menu-btn" for="toggle-checkbox">
-                        <img src="./img/side-menu.svg" class="dec">
+                        <img src="./img/side-menu.svg" class="dec side-menu__btn">
                     </label>
                     <div class="toverlay">
                     <div class="wrap">
@@ -33,7 +36,7 @@
                             <div class="toggle-menu__header">
                                 <div class="toggle-menu__logo">
                                     <label for="toggle-checkbox">
-                                        <img src="./img/cross.svg" class="dec">
+                                        <img src="./img/cross.svg" class="dec  side-menu__btn-close">
                                     </label>
                                     <img src="./img/logo_cps.svg">
                                 </div>
@@ -256,7 +259,7 @@
         
 <div footer-brands__container class="brands-small-screens">
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper swiper-wrapper1">
             <div class="swiper-slide swiper-slide1">
                 <div class="brand brand1  fix-types">
                 <div class="brand-logo"><span class="fix-types__text">Ремонт ноутбуков</span></div><div class="logo-button">
@@ -296,46 +299,110 @@
 
 <h1 class="footer_title"><div class="footer_title-text">ЦЕНЫ НА УСЛУГИ</div></h1>
 <div class="price-container">
-<div class="price-item"></div>
-<div class="services-table">
-    <div class="service-header">
-        <div>Ремонтные услуги</div>
-        <div>Цена</div>
-        <div>Срок</div>
-        <div></div> 
+    <div class="price-item">
+            <div>Ремонтные услуги</div>
+            <div>Цена</div>
+            <div>Срок</div>
+            <div></div>
     </div>
-    <div class="service-row">
-        <div>Диагностика</div>
-        <div>Бесплатно</div>
-        <div>30 мин</div>
-        <button>ЗАКАЗАТЬ</button>
-    </div>
-    <div class="service-row">
-        <div>Замена дисплея</div>
-        <div>1000 ₽</div>
-        <div>30-120 мин</div>
-        <button>ЗАКАЗАТЬ</button>
-    </div>
-    <div class="service-row">
-        <div>Замена полифонического динамика</div>
-        <div>1000 ₽</div>
-        <div>30-120 мин</div>
-        <button>ЗАКАЗАТЬ</button>
-    </div>
+    <ul class="price-item__table">
+        <li>Диагностика</li>
+        <li class="table-cell">Бесплатно</li>
+        <li class="table-cell">30 мин</li>
+        <li ><img src="./img/zakazat.svg" class="dec"></li>
+
+        <li>Замена дисплея</li>
+        <li class="table-cell">1000 ₽</li>
+        <li class="table-cell">30-120 мин</li>
+        <li><img src="./img/zakazat.svg" class="dec"></li>
+
+        <li>Замена полифонического динамика</li>
+        <li class="table-cell">1000 ₽</li>
+        <li class="table-cell">30-120 мин</li>
+        <li><img src="./img/zakazat.svg" class="dec"></li>
+
+        <li>Тестирование с выдачей технического заключения</li>
+        <li class="table-cell">1000 ₽</li>
+        <li class="table-cell">30-120 мин</li>
+        <li><img src="./img/zakazat.svg" class="dec"></li>
+
+        <li class="li-bot">Замена программного обеспечения</li>
+        <li class="table-cell li-bot">1000 ₽</li>
+        <li class="table-cell li-bot">30-120 мин</li>
+        <li class="li-bot"><img src="./img/zakazat.svg" class="dec"></li>
+    </ul>
     
 </div>
+<div class="swiper-price-container">
+    <div class="swiper mySwiper-price">
+        <div class="swiper-wrapper swiper-wrapper2">
+            
+            <div class="swiper-slide swiper-slide1 swiper-slide2">
+                <div class=" price-types">
+            <div class="price-logo">
+                <div><a class="price-it__container">Ремонтные услуги<a class="price-it">Тестирование с выдачей технического заключения</a></a></div>
+                <div><a class="price-it__container">Цена<a class="price-it">Бесплатно</a></a></div>
+                <div class="price-it__container-footer"><div class="price-it__container"><div>Срок</div><div class="price-it"><a>30-120 мин</a>
+                    <img src="./img/zakazat.svg" class="price-btn"></div>
+                </div></div>
+            </div></div></div>
+            <div class="swiper-slide swiper-slide1">
+                <div class=" price-types">
+                    <div class="price-logo">
+                        <div><a class="price-it__container">Ремонтные услуги<a class="price-it">Диагностика</a></a></div>
+                        <div><a class="price-it__container">Цена<a class="price-it">Бесплатно</a></a></div>
+                        <div class="price-it__container-footer"><div class="price-it__container"><div>Срок</div><div class="price-it"><a>30 мин</a>
+                            <img src="./img/zakazat.svg" class="price-btn"></div>
+                        </div></div>
+                    </div></div>
+            </div>
+            <div class="swiper-slide swiper-slide1">
+                <div class=" price-types">
+                    <div class="price-logo">
+                        <div><a class="price-it__container">Ремонтные услуги<a class="price-it">Замена дисплея</a></a></div>
+                        <div><a class="price-it__container">Цена<a class="price-it">1000 ₽</a></a></div>
+                        <div class="price-it__container-footer"><div class="price-it__container"><div>Срок</div><div class="price-it"><a>30-120 мин</a>
+                            <img src="./img/zakazat.svg" class="price-btn"></div>
+                        </div></div>
+                    </div></div>
+            </div>
+            <div class="swiper-slide swiper-slide1">
+                <div class=" price-types">
+                    <div class="price-logo">
+                        <div><a class="price-it__container">Ремонтные услуги<a class="price-it">Замена полифонического динамика</a></a></div>
+                        <div><a class="price-it__container">Цена<a class="price-it">1000 ₽</a></a></div>
+                        <div class="price-it__container-footer"><div class="price-it__container"><div>Срок</div><div class="price-it"><a>30-120 мин</a>
+                            <img src="./img/zakazat.svg" class="price-btn"></div>
+                        </div></div>
+                    </div></div>
+            </div>
+            <div class="swiper-slide swiper-slide1">
+                <div class=" price-types">
+                    <div class="price-logo">
+                        <div><a class="price-it__container">Ремонтные услуги<a class="price-it">Замена программного обеспечения</a></a></div>
+                        <div><a class="price-it__container">Цена<a class="price-it">1000 ₽</a></a></div>
+                        <div class="price-it__container-footer"><div class="price-it__container"><div>Срок</div><div class="price-it"><a>30-120 мин</a>
+                            <img src="./img/zakazat.svg" class="price-btn"></div>
+                        </div></div>
+                    </div></div>
+            </div>
+           
+         
+        </div>
+         <div class="swiper-pagination"></div>
+    </div>
 </div>
 <div class="price-text"><span>Все цены указаны с учетом НДС. 
     Стоимость ремонта указана на единичную услугу. 
     Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</span></div>
-<div class="price-text2"><span>Получить коммерческое предложение</span></div>
+<div class="price-text2"><span>Получить коммерческое предложение</span><img src="./img/more.svg" class="dec"></div>
 
 <div class="main-footer__container">
     <div  class="item1__container"><a class="main-footer__item"><div class="item1">© 2019 CPS</div>
         <div class="item1">Разработано командой Apesong</div> </a></div>
     <div><a class="main-footer__item"><div>Политика конфиденциальности</div></a></div>
-    <div class="item2__container"><a class="main-footer__item"><div class="item2">Информация, размещенная на данной </div>
-        <div class="item2">странице, не является публичной офертой</div></a></div>
+    <div class="item2__container"><a class="main-footer__item"><div class="item2">Информация, размещенная на данной странице,
+        не является публичной офертой</div></a></div>
         </div>
     
 
@@ -392,11 +459,49 @@
         </div>
     </div>
     </div>
-    <!-- <div class="main-footer__container">
-<div><span><a class="main-footer__item">© 2019 CPS Разработано командой Apesong </a></span></div>
-<div><span><a class="main-footer__item">Политика конфиденциальности</a></span></div>
-<div><span><a class="main-footer__item">Информация, размещенная на данной странице, не является публичной офертой</a></span></div>
-    </div> -->
+
+    <div class=" side-toggle-menu">
+        <div class="toggle-menu__header toggle-menu__header1">
+            <div class="toggle-menu__logo toggle-menu__logo1">
+                <!-- <label for="toggle-checkbox">
+                    <img src="./img/cross.svg" class="dec">
+                </label> -->
+                <img src="./img/logo_cps.svg">
+            </div>
+            <div class="toggle-menu__search"><img src="./img/search.svg" class="dec"></div>
+        </div>
+    <div class=" toggle-menu__main1">
+    <div class="toggle-menu__list toggle-menu__list1">
+        <ul class="list1">
+           <div class="first-child"><img src="./img/highlight.svg" height="32px" class="highlight1"><li class="menu-item"><div class="menu-item__text dec">Ремонт техники</div></li></div>
+            <li class="menu-item"><div class="menu-item__text dec">Услуги и сервисы</div</li>
+            <li class="menu-item"><div class="menu-item__text dec">Корпоративным клиентам</div></li>
+            <li class="menu-item"><div class="menu-item__text dec">Продавцам техники</div></li>
+            <li class="menu-item"><div class="menu-item__text dec">Партнерам</div></li>
+            <li class="menu-item"><div class="menu-item__text dec">Производителям</div></li>
+            <li class="menu-item"><div class="menu-item__text dec">Наши сервисные центры</div></li>
+            <li class="menu-item"><div class="menu-item__text dec">Контакты</div></li>
+        </ul>
+    </div>
+    <div class="toggle-menu__footer-container1">
+        <div class="toggle-menu__footer1">
+            <div class="toggle-menu__footer-icons">
+                <img src="./img/phone.svg" class="call-button1 dec">
+                <img src="./img/chat.svg" class="open-feedback-btn1 dec">
+                <img src="./img/profile.svg" class="dec">
+            </div>
+            <div class="footer-mail">mail@spc.com</div>
+            <div class="footer-phone1">8 800 890 9800</div>
+            <div class="footer-lang dec">
+                    <div class="lang">RU</div>
+                    <div class="lang">EN</div>
+                    <div class="lang">CH</div>
+            </div>
+    </div> 
+    </div>
+</div>
+    </div>
+
 </body>
 <!-- <script src="./index.js"></script> -->
 </html> 

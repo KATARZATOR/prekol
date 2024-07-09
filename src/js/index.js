@@ -1,5 +1,6 @@
 import '../scss/style.scss'
 import './'
+import './toggle-menu'
 //для скрыть 1
 document.addEventListener('DOMContentLoaded', function () {
   let toggleButton = document.getElementById('toggleButton')
@@ -54,6 +55,55 @@ const swiper = new Swiper('.mySwiper', {
     720: {
       spaceBetween: 10,
       slidesPerView: 2.8
+    }
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  initialSlide: 0
+})
+
+//для свайпера цен
+const swiper1 = new Swiper('.mySwiper-price', {
+  breakpoints: {
+    220: {
+      slidesPerView: 1.1,
+      spaceBetween: 10
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    380: {
+      slidesPerView: 1.3,
+      spaceBetween: 10
+    },
+    420: {
+      slidesPerView: 1.5,
+      spaceBetween: 10
+    },
+    480: {
+      slidesPerView: 1.7,
+      spaceBetween: 10
+    },
+    520: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    580: {
+      slidesPerView: 2.1,
+      spaceBetween: 10
+    },
+    620: {
+      slidesPerView: 2.3,
+      spaceBetween: 10
+    },
+    720: {
+      spaceBetween: 10,
+      slidesPerView: 2.5
     }
   },
 
@@ -189,6 +239,44 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 300)
   })
 })
+
+//ДЛЯ ВТОРОЙ КНОПКИ ФИДБЕКА
+document.addEventListener('DOMContentLoaded', function () {
+  const feedbackContainer = document.querySelector('.feedback-container');
+  const openButtons = document.querySelectorAll('.open-feedback-btn, .open-feedback-btn1'); 
+  const closeButton = document.querySelector('.close-feedback-btn');
+  const foverlay = document.querySelector('.foverlay');
+  function openMenu() {
+    feedbackContainer.style.display = 'block';
+    feedbackContainer.classList.add('open');
+    foverlay.style.display = 'block';
+    setTimeout(() => {
+      foverlay.classList.add('show');
+      feedbackContainer.style.right = '0';
+    }, 10);
+  }
+  openButtons.forEach(button => {
+    button.addEventListener('click', openMenu);
+  });
+
+  closeButton.addEventListener('click', function () {
+    feedbackContainer.style.right = '-100%';
+    foverlay.classList.remove('show');
+    setTimeout(() => {
+      feedbackContainer.style.display = 'none';
+      foverlay.style.display = 'none';
+    }, 300);
+  });
+
+  foverlay.addEventListener('click', function () {
+    feedbackContainer.style.right = '-100%';
+    foverlay.classList.remove('show');
+    setTimeout(() => {
+      feedbackContainer.style.display = 'none';
+      foverlay.style.display = 'none';
+    }, 300);
+  });
+});
 
 // ДЛЯ ОВЕРЛЕЯ ТОГЛ МЕНЮ
 document.addEventListener('DOMContentLoaded', function () {

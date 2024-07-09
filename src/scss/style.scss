@@ -3,8 +3,9 @@
 @import './modal-call.css';
 @import './feedback.css';
 @import './price.css';
-@import "./footer.css";
+@import './footer.css';
 @import './toggle-menu.css';
+
 /* Общие стили */
 html {
   box-sizing: border-box;
@@ -34,7 +35,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   transform: translateX(-100%);
   transition: transform 1s ease;
 }
@@ -197,6 +198,9 @@ body {
   }
   .brands-small-screens {
     display: none;
+  }
+  .brands-big-screens {
+    margin-left: 24px;
   }
   footer {
     max-height: 88px;
@@ -655,7 +659,7 @@ h1 {
   opacity: 0.5;
 }
 .swiper-slide1 {
-  height: 200px;
+  height: 180px;
 }
 .fix-types__text,
 .fix-btn {
@@ -669,7 +673,7 @@ h1 {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0);
-  z-index: 900;
+  z-index: 9000;
   transition: background-color 0.3s ease-in-out;
   display: none;
 }
@@ -683,7 +687,7 @@ h1 {
 .wrap {
   display: block;
   position: fixed;
-  width: 320px; 
+  width: 320px;
   background-color: #ffffff;
   height: 100%;
   top: 0;
@@ -703,14 +707,33 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 320px; 
+  width: 320px;
   background-color: #ffffff;
   height: 100%;
   overflow-y: auto;
 }
 @media (max-width: 360px) {
-  .wrap, .toggle-menu {
+  .wrap,
+  .toggle-menu {
     width: 100%;
   }
 }
 // *******************************
+.swiper-wrapper1 {
+  height: 170px;
+}
+.swiper-wrapper2 {
+  height: 210px;
+}
+// *******************************
+h1 {
+  position: relative;
+}
+.footer_title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d9fff5;
+}
