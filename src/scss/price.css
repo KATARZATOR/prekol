@@ -34,7 +34,7 @@ ul.price-item__table .li-bot {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-between;
     padding: 16px;
   }
@@ -48,7 +48,7 @@ ul.price-item__table .li-bot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     position: relative;
   }
   .price-btn {
@@ -60,7 +60,7 @@ ul.price-item__table .li-bot {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {

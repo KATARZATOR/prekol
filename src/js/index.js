@@ -1,6 +1,7 @@
 import '../scss/style.scss'
-import './'
+import './feedback'
 import './toggle-menu'
+import './modal-call'
 //для скрыть 1
 document.addEventListener('DOMContentLoaded', function () {
   let toggleButton = document.getElementById('toggleButton')
